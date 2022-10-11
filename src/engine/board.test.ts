@@ -1,4 +1,3 @@
-import 'chai/register-should'
 import Board from './board'
 import { Pawn } from './pieces'
 import Player from './player'
