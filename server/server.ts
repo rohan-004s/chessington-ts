@@ -9,8 +9,5 @@ const port = 3000
 const hostname = 'localhost'
 
 app.listen(port, hostname, () => {
-  console.log(
-    `API is running at ` + 
-    `http://${hostname}:${port}`
-  )
+  console.log(`API is running at ` + `http://${hostname}:${port}`)
 })

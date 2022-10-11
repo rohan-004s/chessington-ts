@@ -15,7 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["."]
 }

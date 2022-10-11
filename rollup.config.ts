@@ -1,4 +1,4 @@
-import type { RollupOptions } from "rollup";
+import type { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
 import nodeResolve from '@rollup/plugin-node-resolve'
 
@@ -6,15 +6,15 @@ const config: RollupOptions = {
   input: 'src/frontend/chessington.ts',
   plugins: [
     typescript({
-      tsconfig: 'tsconfig.build.json'
-    }), 
+      tsconfig: 'tsconfig.build.json',
+    }),
     nodeResolve({
-      browser: true
+      browser: true,
     }),
   ],
   output: {
-    file: 'public/js/chessington.js'
-  }
+    file: 'public/js/chessington.js',
+  },
 }
 
 export default config
