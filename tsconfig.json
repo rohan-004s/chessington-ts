@@ -16,7 +16,6 @@
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitAny": true,
-    "outDir": "dist"
   },
   "include": ["src", "rollup.config.ts"]
 }
