@@ -26,8 +26,8 @@ class Square {
 }
 
 class Board {
-    constructor() {
-        this.currentPlayer = Player.WHITE;
+    constructor(currentPlayer) {
+        this.currentPlayer = currentPlayer || Player.WHITE;
         this.board = this.createBoard();
     }
     createBoard() {
@@ -108,8 +108,10 @@ class Pawn extends Piece {
     constructor(player) {
         super(player);
     }
-    getAvailableMoves(_board) {
-        return [];
+    getAvailableMoves(board) {
+        const currentSquare = board.findPiece(this);
+        const squareInFront = Square.at(currentSquare.row + (this.player === Player.WHITE ? 1 : -1), currentSquare.col);
+        return [squareInFront];
     }
 }
 
